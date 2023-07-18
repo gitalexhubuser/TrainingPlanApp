@@ -5,6 +5,10 @@ def create_training_plan():
     # Получение введенного числа из поля ввода
     weight = int(entry.get())
 
+     # Проверка на пустой ввод
+    if not weight:
+        return
+
     # Делаем 50% от введённого числа (по тз)
     halfWeight = weight * 0.5
 
@@ -19,7 +23,7 @@ def create_training_plan():
 
 # Создание графического интерфейса с одной кнопкой и полем ввода
 window = tk.Tk()
-window.title("Тренировочный план")
+window.title("Program: Percentage in Powerlifting (PiP)")
 window.geometry("300x230")
 
 label = tk.Label(window, text="Введите число:")
