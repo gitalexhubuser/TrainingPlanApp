@@ -1,4 +1,4 @@
-# Program: Percentage in Powerlifting (PiP) ver 0.1
+# Program: Percentage in Powerlifting (PiP) ver 0.2
 
 ![](Img/Pic1.png)
 
