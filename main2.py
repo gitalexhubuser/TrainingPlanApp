@@ -1,4 +1,5 @@
 import tkinter as tk
+from Libs.lib_tk import TrainingPlanApp
 
 def create_training_plan():
 

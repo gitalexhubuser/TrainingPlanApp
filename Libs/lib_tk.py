@@ -1,26 +1,34 @@
 import tkinter as tk
 
-class PowerliftingApp: 
-    def init(self): 
-        self.root = tk.Tk() 
-        self.root.title("Percentage in Powerlifting (PiP) ver 0.1")
-
-        self.entry = tk.Entry(self.root)
+class TrainingPlanApp:
+    def __init__(self, window):
+        self.window = window
+        self.window.title("Program: Percentage in Powerlifting (PiP)")
+        self.window.geometry("300x230")
+        
+        self.label = tk.Label(window, text="Введите число:")
+        self.label.pack()
+        
+        self.entry = tk.Entry(window)
         self.entry.pack()
         
-        self.button = tk.Button(self.root, text="Посчитать", command=self.create_training_table)
+        self.button = tk.Button(window, text="Создать таблицу", command=self.create_training_plan)
         self.button.pack()
         
-        self.result_label = tk.Label(self.root, text="")
-        self.result_label.pack()
+        self.output = tk.Text(window)
+        self.output.pack()
+    
+    def create_training_plan(self):
+        weight = self.entry.get()
         
-    def create_training_table(self):
-        # Ваш код для создания таблицы тренировок
-    
-        self.result_label.config(text="Таблица тренировок создана")  # Пример вывода результата
-    
-    def run(self):
-        self.root.mainloop()
-
-# Использование:
-# app = PowerliftingApp() app.run() 
+        if weight == '':
+            return
+        
+        weight = int(weight)
+        halfWeight = weight * 0.5
+        
+        self.output.delete('1.0', tk.END)
+        
+        for week in range(1, 11):
+            new_weight = halfWeight + (week - 1) * 10
+            self.output.insert(tk.END, f'{week} неделя {new_weight}кг 4 подхода по 8 раз\n')
