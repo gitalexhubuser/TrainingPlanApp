@@ -2,12 +2,17 @@ import tkinter as tk
 
 def create_training_plan():
 
+     # Получение введенного числа из поля ввода
+    weight = entry.get()
+
+    # Проверка на пустой ввод
+    if weight == '':
+        return
+    
     # Получение введенного числа из поля ввода
     weight = int(entry.get())
 
-     # Проверка на пустой ввод
-    if not weight:
-        return
+
 
     # Делаем 50% от введённого числа (по тз)
     halfWeight = weight * 0.5
