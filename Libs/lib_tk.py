@@ -1,6 +1,7 @@
 import tkinter as tk
 
 class TrainingPlanApp:
+
     def __init__(self, window):
         self.window = window
         self.window.title("Program: Percentage in Powerlifting (PiP)")
@@ -19,13 +20,16 @@ class TrainingPlanApp:
         self.output.pack()
     
     def create_training_plan(self):
+
+        # Получение введенного числа из поля ввода
         weight = self.entry.get()
         
+        # Проверка на пустой ввод
         if weight == '':
             return
         
         weight = int(weight)
-        halfWeight = weight * 0.5
+        halfWeight = weight * 0.5 # 50 % веса по ТЗ
         
         self.output.delete('1.0', tk.END)
         
