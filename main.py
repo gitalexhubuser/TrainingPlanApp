@@ -1,6 +1,8 @@
 import tkinter as tk
 
 def create_training_table():
+    
+    # Получение введенного числа из поля ввода
     weight = int(entry.get())
     training_table = ""
     
