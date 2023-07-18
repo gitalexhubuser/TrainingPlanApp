@@ -1,4 +1,7 @@
 import tkinter as tk
+from Libs.pycolors import pycolors
+
+colors = pycolors() # Создаем экземпляр класса pycolors
 
 class TrainingPlanApp:
 
@@ -29,10 +32,11 @@ class TrainingPlanApp:
             return
         
         weight = int(weight)
-        halfWeight = weight * 0.5 # 50 % веса по ТЗ
+        halfWeight = weight * 0.5 # 50% веса по ТЗ
         
         self.output.delete('1.0', tk.END)
         
         for week in range(1, 11):
             new_weight = halfWeight + (week - 1) * 10
             self.output.insert(tk.END, f'{week} неделя {new_weight}кг 4 подхода по 8 раз\n')
+            print(f'{week} неделя {colors.YELLOW}{new_weight}{colors.ENDC} кг 4 подхода по 8 раз\n')

@@ -15,7 +15,7 @@
 
 Программа расчитывает шаг в процентах от первой недели в 50% до 10-той недели!
 
-> Больше деталей в [ТЗ](Program_Percentage_in_Powerlifting_PiP_ver_0_1.pdf)
+> Больше подробностей в [ТЗ](Program_Percentage_in_Powerlifting_PiP_ver_0_1.pdf)
 
 ---
 

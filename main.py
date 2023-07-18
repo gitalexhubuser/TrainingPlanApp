@@ -2,5 +2,5 @@ import tkinter as tk
 from Libs.lib_tk import TrainingPlanApp
 
 window = tk.Tk()
-app = TrainingPlanApp(window)
+app = TrainingPlanApp(window) # Экземпляр
 window.mainloop()
