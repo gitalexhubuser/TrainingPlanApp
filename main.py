@@ -1,6 +1,7 @@
 import tkinter as tk
 from Libs.lib_tk import TrainingPlanApp
 
-window = tk.Tk()
-app = TrainingPlanApp(window) # Экземпляр
-window.mainloop()
+if __name__ == "__main__":
+    window = tk.Tk()
+    app = TrainingPlanApp(window) # Экземпляр класса
+    window.mainloop()

@@ -39,4 +39,4 @@ class TrainingPlanApp:
         for week in range(1, 11):
             new_weight = int(halfWeight + (week - 1) * 10) # Преобразуем в целое число
             self.output.insert(tk.END, f'{week} неделя {new_weight} кг 4 подхода по 8 раз\n')
-            print(f'{week} неделя {colors.YELLOW}{new_weight}{colors.ENDC} кг 4 подхода по 8 раз\n')
+            print(f'{colors.BOLD}{week}{colors.ENDC} неделя {colors.YELLOW}{new_weight}{colors.ENDC} кг 4 подхода по 8 раз\n')
