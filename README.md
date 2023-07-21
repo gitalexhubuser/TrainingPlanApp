@@ -2,8 +2,7 @@
 
 <!-- ![](Img/Pic1.png) -->
 <!-- ![](Img/v2/python_2GcYzUMies.jpg) -->
-
-<img src="https://raw.githubusercontent.com/gitalexhubuser/TrainingPlanApp/main/Img/v2/python_2GcYzUMies.jpg" width="30%" align="center/>
+<img src="https://raw.githubusercontent.com/gitalexhubuser/TrainingPlanApp/main/Img/v2/python_2GcYzUMies.jpg" width="30%" align="center/">
 
 ## Описание
 
