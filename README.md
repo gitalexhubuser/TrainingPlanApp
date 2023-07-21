@@ -1,7 +1,7 @@
 # Program: Percentage in Powerlifting (PiP) ver 0.2
 
 <p align="center">
-  <img width="30%" src="./Img/v2/bulka-animation.png">
+  <img width="40%" src="./Img/v2/bulka-animation.png">
 </p>
 
 ## Описание
