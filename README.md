@@ -1,6 +1,7 @@
 # Program: Percentage in Powerlifting (PiP) ver 0.2
 
-![](Img/Pic1.png)
+<!-- ![](Img/Pic1.png) -->
+![](Img/v2/python_2GcYzUMies.jpg)
 
 ## Описание
 
