@@ -38,8 +38,8 @@ class TrainingPlanApp:
 
     def create_training_plan(self):
 
-        # Получение введенного числа из поля ввода
-        weight = self.entry1.get()
+        # ПРИСЕД
+        weight = self.entry1.get() # Получение введенного числа из поля ввода
         
         # Проверка на пустой ввод
         if weight == '':
@@ -58,3 +58,9 @@ class TrainingPlanApp:
             new_weight = int(halfWeight + step_percentage * (week - 1)) # Преобразуем в целое число
             self.output.insert(tk.END, f'{week} неделя {new_weight} кг 4 подхода по 8 раз\n')
             print(f'{colors.BOLD}{week}{colors.ENDC} неделя {colors.YELLOW}{new_weight}{colors.ENDC} кг 4 подхода по 8 раз\n')
+            
+        # ЖИМ
+        weight = self.entry2.get() # Получение введенного числа из поля ввода
+
+        # ТЯГА
+        weight = self.entry3.get() # Получение введенного числа из поля ввода
