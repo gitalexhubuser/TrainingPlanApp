@@ -1,1 +1,34 @@
 kivy
+# Kivy==2.2.1
+
+
+# Обновить pip:
+# python.exe -m pip install --upgrade pip
+
+# Установить зависимости:
+# pip install -r requirements.txt
+
+# Удалить зависимости:
+# pip list
+# скопировать в 123.txt
+# pip uninstall -r 123.txt -y
+
+# Создаение venv:
+# python -m venv venv
+# python -m venv test
+# python -m venv tik-tok
+# python -m venv you-tube-venv
+
+# Активация venv:
+# bogatov_subtitles\Scripts\activate.bat
+# .\bogatov_subtitles\Scripts\activate
+
+# Если не получается активировать:
+# .\venv\Scripts\activate
+
+# VSCode авто активация:
+# File - Preferences - Settings - ввод в поиск фразы "Activate Env In Current Terminal"
+
+# cmd bat
+# cmd /k "cd /d E:\PythonSubtitle\bogatov_subtitles\Scripts & activate & cd /d E:\PythonSubtitle & python main2.py"
+# @REM pause

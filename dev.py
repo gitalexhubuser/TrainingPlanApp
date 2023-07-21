@@ -1,4 +1,4 @@
-import kivy
+# import kivy
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.button import Button
@@ -27,7 +27,7 @@ class MyApp(App):
         return layout
 
     def create_training_plan(self, instance):
-        weight = float(entry1.text)
+        weight = float(entry1.text) # NameError: name 'entry1' is not defined
         halfWeight = weight * 0.5
         step_percentage = (weight - halfWeight) / 10
         output.text = ""
