@@ -1,9 +1,7 @@
 # Program: Percentage in Powerlifting (PiP) ver 0.2
 
-<!-- ![](Img/Pic1.png) -->
-<!-- ![](Img/v2/python_2GcYzUMies.jpg) -->
 <p align="center">
-  <img width="30%" src="https://raw.githubusercontent.com/gitalexhubuser/TrainingPlanApp/main/Img/v2/python_2GcYzUMies.jpg">
+  <img src="./Img/v2/python_2GcYzUMies.jpg">
 </p>
 
 ## Описание
