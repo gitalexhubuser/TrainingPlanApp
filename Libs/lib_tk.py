@@ -48,8 +48,8 @@ class TrainingPlanApp:
         weight = int(float(weight))
         halfWeight = weight * 0.5 # 50% веса по ТЗ
 
-        # step_percentage = (100 - 50) / 10 # Шаг в процентах # или !!!
-        step_percentage = (weight  - halfWeight) / 10 # Шаг в процентах # или !!!
+        # step_percentage = (100 - 50) / 10 # Шаг в процентах # или !!! FIXME:
+        step_percentage = (weight  - halfWeight) / 10 # Шаг в процентах # или !!! FIXME:
         
         self.output.delete('1.0', tk.END)
         
@@ -59,8 +59,8 @@ class TrainingPlanApp:
             self.output.insert(tk.END, f'{week} неделя {new_weight} кг 4 подхода по 8 раз\n')
             print(f'{colors.BOLD}{week}{colors.ENDC} неделя {colors.YELLOW}{new_weight}{colors.ENDC} кг 4 подхода по 8 раз\n')
             
-        # ЖИМ
+        # TODO: ЖИМ
         weight = self.entry2.get() # Получение введенного числа из поля ввода
 
-        # ТЯГА
+        # TODO: ТЯГА
         weight = self.entry3.get() # Получение введенного числа из поля ввода
