@@ -27,8 +27,8 @@ class TrainingPlanApp:
 
         self.label3 = tk.Label(window, text="Тяга:")
         self.label3.place(x=0, y=30*3)
-        self.entry2 = tk.Entry(window, width=38)
-        self.entry2.place(x=60, y=32*3)
+        self.entry3 = tk.Entry(window, width=38)
+        self.entry3.place(x=60, y=32*3)
 
         self.button2 = tk.Button(window, text="Создать таблицу", command=self.create_training_plan)
         self.button2.place(x=90, y=32*4)
