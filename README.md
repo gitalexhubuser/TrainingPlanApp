@@ -2,7 +2,8 @@
 
 <p align="center">
   <!-- <img src="./Img/v2/python_2GcYzUMies.jpg"> -->
-  <img src="./Img/v2/animation.png">
+  <!-- <img src="./Img/v2/animation.png"> -->
+  <img src="./Img/v2/animation.gif">
 </p>
 
 ## Описание
