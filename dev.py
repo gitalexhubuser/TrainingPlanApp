@@ -5,6 +5,8 @@ from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.gridlayout import GridLayout
 
+from kivy.uix.popup import Popup
+
 class MyApp(App):
     def build(self):
         layout = GridLayout(cols=2)
@@ -27,13 +29,19 @@ class MyApp(App):
         return layout
 
     def create_training_plan(self, instance):
-        weight = float(entry1.text) # NameError: name 'entry1' is not defined
-        halfWeight = weight * 0.5
-        step_percentage = (weight - halfWeight) / 10
-        output.text = ""
-        for week in range(1, 11):
-            new_weight = int(halfWeight + step_percentage * (week - 1))
-            output.text += f"{week} неделя {new_weight} кг 4 подхода по 8 раз\n"
+        popup = Popup(title="Уведомление",
+                content=Label(text="Вы нажали на кнопку"),
+                size_hint=(None, None),
+                size=(400, 400))
+        # weight = float(entry1.text) # NameError: name 'entry1' is not defined
+        # halfWeight = weight * 0.5
+        # step_percentage = (weight - halfWeight) / 10
+        # output.text = ""
+        # for week in range(1, 11):
+        #     new_weight = int(halfWeight + step_percentage * (week - 1))
+        #     output.text += f"{week} неделя {new_weight} кг 4 подхода по 8 раз\n"
+        popup.open()
+
 
 if __name__ == "__main__":
     MyApp().run()
