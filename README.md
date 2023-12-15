@@ -22,7 +22,9 @@
   - Нажать `Создать таблицу`
   - Получить результат
 - **exe**
-  - Запустить ?
+  - Запустить `main.exe` из `output(OneFile)/main.exe`
+или
+  - Запустить `main.exe` из `output(OneDirectory)\main\main.exe`
 
 ---
 
