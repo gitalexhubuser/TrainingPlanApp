@@ -16,11 +16,16 @@
 
 ## Использование
 
-- **VSCode** - запустить `main.py`
-- **Windows** - запустить `start.cmd`
+- **VSCode**
+  - Открыть файл `main.py` в VSCode
+  - Нажать справа вверху кнопку `Run Python File`
+
+- **Windows** 
+  - Запустить `start.cmd`
   - Ввести цифру
   - Нажать `Создать таблицу`
   - Получить результат
+
 - **exe**
   - Запустить `main.exe` из `output(OneFile)/main.exe`
 или
