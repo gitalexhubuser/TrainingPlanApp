@@ -1,7 +1,7 @@
 # Program: Percentage in Powerlifting (PiP) ver 0.3
 
 <p align="center">
-  <img width="40%" src=".Assets/Img/v2/bulka-animation.png">
+  <img width="40%" src="Assets/Img/v2/bulka-animation.png">
 </p>
 
 ## Описание
@@ -10,9 +10,9 @@
 
 Программа расчитывает шаг в процентах от первой недели в 50% до 10-той недели!
 
-> Больше подробностей в [ТЗ](.Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_1.pdf)
+> Больше подробностей в [ТЗ](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_1.pdf)
 
-> Больше подробностей в [ТЗ (2)](.Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_2.pdf)
+> Больше подробностей в [ТЗ (2)](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_2.pdf)
 
 ---
 
