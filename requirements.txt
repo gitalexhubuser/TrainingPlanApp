@@ -1,8 +1,1 @@
-# kivy
-# Kivy==2.2.1
-
-# cmd bat
-# cmd /k "cd /d E:\PythonSubtitle\bogatov_subtitles\Scripts & activate & cd /d E:\PythonSubtitle & python main2.py"
-# @REM pause
-
-pip install auto-py-to-exe
+# pip install auto-py-to-exe
