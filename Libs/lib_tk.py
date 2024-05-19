@@ -86,36 +86,3 @@ class TrainingPlanApp:
 
         # TODO: ТЯГА
         # weight = self.entry3.get() # Получение введенного числа из поля ввода
-
-
-'''
-    def create_training_plan(self):
-        weight_squat = self.entry1.get()
-        weight_bench_press = self.entry2.get()
-        weight_deadlift = self.entry3.get()
-
-        if weight_squat == '' or weight_bench_press == '' or weight_deadlift == '':
-            return
-
-        weight_squat = int(float(weight_squat))
-        halfWeight_squat = weight_squat * 0.5
-        step_percentage_squat = (weight_squat - halfWeight_squat) / 10
-
-        weight_bench_press = int(float(weight_bench_press))
-        halfWeight_bench_press = weight_bench_press * 0.5
-        step_percentage_bench_press = (weight_bench_press - halfWeight_bench_press) / 10
-
-        weight_deadlift = int(float(weight_deadlift))
-        halfWeight_deadlift = weight_deadlift * 0.5
-        step_percentage_deadlift = (weight_deadlift - halfWeight_deadlift) / 10
-
-        self.output.delete('1.0', tk.END)
-
-        for week in range(1, 11):
-            new_weight_squat = int(halfWeight_squat + step_percentage_squat * (week - 1))
-            new_weight_bench_press = int(halfWeight_bench_press + step_percentage_bench_press * (week - 1))
-            new_weight_deadlift = int(halfWeight_deadlift + step_percentage_deadlift * (week - 1))
-
-            self.output.insert(tk.END, f'{week} неделя: Присед - {new_weight_squat} кг, Жим - {new_weight_bench_press} кг, Тяга - {new_weight_deadlift} кг, 4 подхода по 8 раз\n')
-            print(f'{colors.BOLD}{week}{colors.ENDC} неделя: Присед - {colors.YELLOW}{new_weight_squat}{colors.ENDC} кг, Жим - {colors.YELLOW}{new_weight_bench_press}{colors.ENDC} кг, Тяга - {colors.YELLOW}{new_weight_deadlift}{colors.ENDC} кг, 4 подхода по 8 раз\n')
-'''
