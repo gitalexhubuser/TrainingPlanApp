@@ -7,11 +7,15 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         ".vscode": true,
-        "venv": true
+        "venv": true,
+        "Libs/__pycache__": true,
+        "start.cmd — ярлык.lnk": true
     },
     "hide-files.files": [
         ".vscode",
-        "venv"
+        "venv",
+        "Libs/__pycache__",
+        "start.cmd — ярлык.lnk"
     ],
     "python.terminal.activateEnvInCurrentTerminal": true
 }
