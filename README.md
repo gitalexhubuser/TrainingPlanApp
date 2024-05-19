@@ -10,7 +10,7 @@
 
 Программа расчитывает шаг в процентах от первой недели в 50% до 10-той недели!
 
-> Больше подробностей в [ТЗ-1](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_1.pdf), [ТЗ-2](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_2.pdf)
+> Больше подробностей в [ТЗ-1](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_1.pdf), [ТЗ-2](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_2.pdf) [ТЗ-3](Assets/Program_Percentage_in_Powerlifting_PiP_ver_0_3.md)
 
 ---
 
@@ -28,8 +28,6 @@
 
 - **exe**
   - Запустить `main.exe` из `output(OneFile)/main.exe`
-или
-  - Запустить `main.exe` из `output(OneDirectory)\main\main.exe`
 
 ---
 
