@@ -8,7 +8,7 @@ class TrainingPlanApp:
     def __init__(self, window):
         self.window = window
         self.window.title("Program: Percentage in Powerlifting (PiP)")
-        self.window.geometry("300x320")
+        self.window.geometry("300x620")
         
         self.label1 = tk.Label(window, text="Введите числа:")
         self.label1.config(font=("Helvetica", 12, "bold"))
@@ -56,7 +56,7 @@ class TrainingPlanApp:
         # step_percentage = (100 - 50) / 10 # Шаг в процентах # или !!! FIXME:
         step_percentage = (weight  - halfWeight) / 10 # Шаг в процентах # или !!! FIXME:
         
-        self.output.delete('1.0', tk.END)
+        # self.output.delete('1.0', tk.END)
         
         for week in range(1, 11):
             # new_weight = int(halfWeight + (week - 1) * 10) # Преобразуем в целое число
@@ -65,10 +65,27 @@ class TrainingPlanApp:
             print(f'{colors.BOLD}{week}{colors.ENDC} неделя {colors.YELLOW}{new_weight}{colors.ENDC} кг 4 подхода по 8 раз\n')
             
         # TODO: ЖИМ
-        weight = self.entry2.get() # Получение введенного числа из поля ввода
+        weight_bench_press = self.entry2.get() # Получение введенного числа из поля ввода
+
+        # Проверка на пустой ввод
+        if weight_bench_press == '':
+            return
+        
+        weight_bench_press = int(float(weight_bench_press))
+        halfweight_bench_press = weight_bench_press * 0.5 # 50% веса по ТЗ
+
+        step_percentage = (weight_bench_press  - halfweight_bench_press) / 10 # Шаг в процентах # или !!! FIXME:
+
+        # self.output.delete('1.0', tk.END)
+
+        for week in range(1, 11):
+            # new_weight_bench_press = int(halfweight_bench_press + (week - 1) * 10) # Преобразуем в целое число
+            new_weight_bench_press = int(halfweight_bench_press + step_percentage * (week - 1)) # Преобразуем в целое число
+            self.output.insert(tk.END, f'{week} неделя {new_weight_bench_press} кг 4 подхода по 8 раз\n')
+            print(f'{colors.BOLD}{week}{colors.ENDC} неделя {colors.YELLOW}{new_weight_bench_press}{colors.ENDC} кг 4 подхода по 8 раз\n')
 
         # TODO: ТЯГА
-        weight = self.entry3.get() # Получение введенного числа из поля ввода
+        # weight = self.entry3.get() # Получение введенного числа из поля ввода
 
 
 '''
